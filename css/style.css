@@ -17,3 +17,14 @@ body {
     background-size: 100%;
     border-radius: 0px 0px 80px 80px;
 }
+
+[data-aos="rotate"] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos="rotate"].aos-animate {
+    opacity: 1;
+    transform: rotate(0);
+}
